@@ -1,0 +1,58 @@
+.tableroAjedrezConJS {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* 8 columnas, cada una con el mismo ancho */
+    grid-template-rows: repeat(8, 1fr); /* 8 filas, cada una con el mismo alto */
+     /* Ajusta el tamaño del tablero */
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+   margin-top: 66px;
+    
+}
+
+.casilla, .casillaImpar {
+    width: 100%;
+    height: 100%;
+    
+    border: 1px solid gray;
+    display: inline-block;
+    font-size: 22px;
+    line-height: 44px; /* Alinea el contenido en el centro */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    /* Cambiar el cursor al hacer hover para indicar que se puede hacer clic */
+
+}
+
+  .casillaImpar:nth-child(odd), .casilla:nth-child(even) {
+    background-color: #f2d1B3;
+  }
+  
+  .casillaImpar:nth-child(even), .casilla:nth-child(odd)  {
+    background-color: #a63921;
+  }
+  /*even par odd impar*/
+
+.contFichaMoviendo {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 60px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    pointer-events: none;/*este div no permite eventos*/
+    user-select: none; /*evita que el texto sea selecionado*/
+    background-color: #f2d1b3;
+    border-radius: 22px;
+    margin: 5px;
+    border: 2px solid #a63921;
+    box-shadow: 2px 2px 44px rgba(247, 37, 58, 0.5);
+}

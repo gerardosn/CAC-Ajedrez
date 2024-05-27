@@ -1,0 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: nuevo articulo.</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilosFormNuevoArticulo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>  -->
+    <div class="contRecuadroFNA">
+        
+        <form action="#">
+   <div class="contFormNArticulo">
+        <label for="nroWhatsapp">Nro de whatsapp: </label>
+        <input type="tel" name="nroWhatsapp" required maxlength="50" onchange="validarNumeros()" placeholder="3364212345" size="27">
+        <span id="errNroWhatsapp" class="hidden">Error</span><br>
+
+        <label for="compartirJugada">Jugada a compartir: </label>
+        <input type="text" name="compartirJugada" required value="MateMester.co/jugada0001">
+        <span id="errCompartirJugada" class="hidden">Error</span><br>
+
+        
+        
+        <div class="contBoton">
+            <div class="divBtnEnviar" onclick="compartirJugada()">Enviar.</div>
+            <div class="divBtnEnviar" onclick="cerrarContParaForm()">Cerrar.</div>
+            <span id="errDeEnvio" class="hidden">Error</span><br>
+
+          </div>
+
+        
+
+    </div>
+        </form>
+    </div>
+    <script src="scriptFNA.js"></script>
+    <script src="scripts.js"></script>
+<!-- </body>
+</html>  -->

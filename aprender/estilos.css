@@ -1,0 +1,134 @@
+/* body {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+} */
+
+.contenedorDeArticulos {
+    border: 1px;
+    border-radius: 11px;
+    background-color:rgb(102, 102, 102);
+}
+
+.contTitulo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0;
+    border:0;
+    margin: 0;
+}
+
+.contTitulo h2 {
+    font-size: 22px;
+    margin-left: 5px;
+    margin-right: 5px;
+    align-items:baseline;
+}
+
+.contTitulo img {
+    font-size: 8px;
+    margin-right: 11px;
+
+}
+
+hr {
+    padding: 0;
+    border: 1;
+    margin: 0;
+}
+
+.contTxtAbstractoExtendido {/*clase menos importante q id*/
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+   
+    padding: 0;
+    border:0;
+    margin: 0;
+}
+.divImgMultimedia{
+    text-align: center;
+}
+
+.imgMultimedia { 
+   
+    transition: width 0.5s ease; /* Agrega una transición suave */
+    border-radius: 11px;
+    margin: 2px;
+    width: 44%;
+    
+}
+
+
+.texto {
+    font-size: 12px;
+    overflow: hidden;
+    max-height: 2em; /* Ajusta la altura máxima a tres líneas de texto */
+    transition: max-height 0.5s ease; /* Agrega una transición suave */
+    margin-left: 11px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+#texto-corto {/*id mas importante class*/
+    font-size: 12px;
+    margin-left: 11px;
+    margin-right: 5px;
+    /*cuando quita la class texto queda el id txt corto*/
+    margin-left: 11px;
+    margin-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.contTxtFooter{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    height: 65px;
+
+    padding: 0;
+    border:0;
+    margin: 0;
+}
+.contTxtFooter img{
+    
+    padding: 0;
+    border:0;
+    margin: 0;
+}
+.contTxtFooter p{
+    
+    padding: 0;
+    border:0;
+    margin: 0;
+}
+.contTxtFooter table{
+
+    padding: 0;
+    border:0;
+    margin: 2px;
+}
+
+.ContParaFormNArticulo{
+    position: fixed; /* Se posiciona por encima de todo el contenido */
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 88%; 
+    height: auto; 
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo con transparencia */
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    text-align: center; 
+    color: white; 
+    font-size: 18px; 
+    /* padding: 10px 0;  */
+    border: 2px solid #a63921;
+    box-shadow: 2px 2px 44px rgba(247, 37, 58, 0.5);
+    border-radius: 10px;
+        
+}

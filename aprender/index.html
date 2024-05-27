@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="estilosFormNuevoArticulo.css">
+    <title>JaqueMate - Chess</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="nav">
+            <h2>JaqueMate</h2>
+            <div id="navButton">
+                <div class="button"><a href="../index.html">Inicio</a></div>
+                <div class="button submenu">
+                    <a href="index.html">Aprender</a>
+                    <div class="dropdown-content">
+                        <a href="#lecciones">Lecciones</a>
+                        <a href="#estrategias">Estrategias</a>
+                        <a href="#tacticas">Tácticas</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="./noticias/noticias.html">Noticias</a>
+                    <div class="dropdown-content">
+                        <a href="#actualidad">Actualidad</a>
+                        <a href="#eventos">Eventos</a>
+                        <a href="#reportajes">Reportajes</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="#comunidad">Comunidad</a>
+                    <div class="dropdown-content">
+                        <a href="#foro">Foro</a>
+                        <a href="#chat">Chat en Vivo</a>
+                        <a href="#perfiles">Perfiles</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="#torneos">Torneos</a>
+                    <div class="dropdown-content">
+                        <a href="#locales">Locales</a>
+                        <a href="#nacionales">Nacionales</a>
+                        <a href="#internacionales">Internacionales</a>
+                    </div>
+                </div>
+                <div class="button"><a href="./login/login.html">Iniciar Sesión</a></div>
+                <div class="button"><a href="./login/registro.html">Registrarse</a></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="colum">
+                <h2>Partidas</h2>
+            </div>
+            <div id="tablero">
+                <!-- centro -->
+
+    <main>
+        <h1>Aprender a jugar.</h1>
+        <p>En esta sección, intentamos aprender a jugar analizando diferentes partidas. Animate compartir la tuya con la comunidad.</p>
+        <div class="contBoton">
+          <div class="divBtnEnviar" onclick="mostrarContParaForm('formNuevoArticulo.html')">Agregar Jugada</div>
+          <br>
+        </div>
+        
+        <div class="contenedorDeArticulos">
+            <article>
+                <header>
+                <div class="contTitulo">
+                   <div>
+                          <h2>Titulo de la entrada</h2></div>
+                    <div>
+                          <img src="img/compartir.png" width="22" alt="Compartir" onclick="mostrarContParaForm('formCompartir.html')"> <img src="img/like.png" width="22" alt="Me Gusta" onclick="sumarLike()"><img src="img/expandir.png" width="22" alt="Expandir" onclick="mostrarTextoCompleto()"></div>
+                </div>        
+                </header>   
+        
+                    <hr>
+        
+                <div class="contTxtAbstractoExtendido"> 
+                  
+                    <div>
+                      <div id="texto-corto" class="texto">
+                      Abstracto de la entrada. Acá va una sola linea.
+                      </div>
+                      <div id="texto-completo" class="texto">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus ratione debitis laboriosam, quos atque odit, magnam labore voluptate laudantium optio hic obcaecati nulla asperiores omnis temporibus blanditiis nemo ex consectetur.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse inventore est suscipit perspiciatis deserunt expedita quam amet quo labore. Officiis, reprehenderit? Magnam error vitae temporibus consequatur alias commodi, repellendus vel.
+                      </div>
+                    </div>
+                 
+                    <div class="divImgMultimedia">
+                        <img id="imgMultimedia" src="img/multimeda.jpg" alt="imgMultimedia"  class="imgMultimedia"></div>
+                </div> 
+        
+                <footer>
+                    <hr>
+                <div class="contTxtFooter"> 
+                    
+                <div> 
+                    <table>
+                        <tr>
+                          <td rowspan="2"><img src="img/compartir.png" alt="Compartir" onclick="mostrarContParaForm('formCompartir.html')"></td>
+                          <td><p>11</p></td>
+                        </tr>
+                        <tr>
+                          <td onclick="mostrarContParaForm('formCompartir.html')"><p>Compartir</p></td>
+                        </tr>
+                      </table>
+                     </div> 
+                <div> <table>
+                    <tr>
+                      <td rowspan="2"><img src="img/like.png" alt="Likes" onclick="sumarLike()"></td>
+                      <td id="nroLikes" ><p>22</p></td>
+                    </tr>
+                    <tr>
+                      <td onclick="sumarLike()"><p>Likes</p></td>
+                    </tr>
+                  </table></div> 
+                <div> <table>
+                    <tr>
+                      <td rowspan="2"><img src="img/volver.png" alt="Vovler" onclick="restaurarTexto()"></td>
+                      <td><p>.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p>Comprimir</p></td>
+                    </tr>
+                  </table> </div> 
+        
+                </div> 
+        
+                </footer>
+            </article>
+        </div>
+        
+            </main>
+        
+            <!-- contenedor para el formulario -->
+            <div class="ContParaFormNArticulo hidden" >Contenedor para el formulario</div>
+        
+            <script src="scripts.js"> </script>
+            <script src="scriptFNA.js"></script>
+
+
+            </div>
+            <div id="otros">
+                <h2>Otros</h2>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h2>Footer</h2>
+            <div id="multilenguaje">
+                <label for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.contRecuadroFNA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #f2e2ce; /* Agrega un borde azul de 5px */
+    border-radius: 10px; /* Redondea las esquinas con un radio de 10px */
+    
+}
+
+.contFormNArticulo {
+    display: flex;
+    flex-direction: column;
+}
+.contRecuadroFNA p{
+    margin-left: 22px;
+    text-align: left;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+.contBoton{
+    width: 99%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+  }
+  .divBtnEnviar{
+    color: black;
+    user-select: none; /*evita que el texto sea selecionado*/
+    background-color: #f2d1b3;
+    border-radius: 22px;
+    width: 100%;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid #a63921;
+    box-shadow: 2px 2px 44px rgba(247, 37, 58, 0.5);
+  }
+  .divBtnEnviar:hover{
+    background-color: #d96941;
+  }
+  .divBtnEnviar:active{
+    background-color: #f2e2ce;
+  }

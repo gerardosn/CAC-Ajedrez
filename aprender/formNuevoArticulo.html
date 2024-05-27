@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario: nuevo articulo.</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+    <link href="estilosFormNuevoArticulo.css" rel="stylesheet" type="text/css">
+
+</head>
+<body> -->
+    <div class="contRecuadroFNA">
+        <p>Complete los datos que desea compartir en nuesrtra sección: Aprenda a jugar.</p>
+        <form action="#">
+   <div class="contFormNArticulo">
+        <label for="titulo">Ingrese un titulo: </label>
+        <input type="text" name="titulo" required maxlength="50">
+        <span id="errTitulo" class="hidden">Error</span><br>
+
+        <label for="txtBreve">Ingrese un texto breve: </label>
+        <input type="text" name="txtBreve" required maxlength="100">
+        <span id="errTxtBreve" class="hidden">Error</span><br>
+
+        <label for="txtExtendido">Ingrese un texto extendido: </label>
+        <textarea rows="3" cols="" name="txtExtendido"></textarea><br>
+        
+
+        <label for="selectMultimedia">Selecciones el tipo de multimedia que va a utilizar: </label>
+        <select name="selectMultimedia" id="inputSelectMultimedia"  onchange="mostrarOpciones()">
+            <option value="sinOpcion">Sin multimedia.</option>
+            <option value="imagen">Agregar una imagen.</option>
+            <option value="video">Agregar un video de YouTube.</option>
+        </select><br>
+
+        <label for="selectImagen" id="selectImagen" class="hidden">Seleccione su imagen: </label>
+        <input type="file" id="inputSelectImagen" class="hidden" name="selectImagen"> 
+        <span id="errImagen" class="hidden">Error</span> <br>
+
+        <label for="googleIframe" id="googleIframe" class="hidden">Introduzca el iframe proporcionado por google </label>
+        <input type="text" id="inputGoogleIframe" class="hidden" name="googleIframe" required>
+        <span id="errGoogleIframe" class="hidden">Error</span><br>
+        
+        <div class="contBoton">
+            <div class="divBtnEnviar" onclick="enviarDatos()">Enviar datos.</div>
+            <div class="divBtnEnviar" onclick="cerrarContParaForm()">Cerrar.</div>
+            <span id="errDeEnvio" class="hidden">Error</span><br>
+
+          </div>
+
+        
+
+    </div>
+        </form>
+    </div>
+    <script src="scriptFNA.js"></script>
+<!-- </body>
+</html> -->

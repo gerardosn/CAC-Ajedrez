@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./ajedrezConJS2/estiloTablero.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    
+    <title>JaqueMate - Chess</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="nav">
+            <h2>JaqueMate</h2>
+            <div id="navButton">
+                <div class="button"><a href="#inicio">Inicio</a></div>
+                <div class="button submenu">
+                    <a href="./aprender/index.html">Aprender</a>
+                    <div class="dropdown-content">
+                        <a href="#lecciones">Lecciones</a>
+                        <a href="#estrategias">Estrategias</a>
+                        <a href="#tacticas">Tácticas</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="./noticias/noticias.html">Noticias</a>
+                    <div class="dropdown-content">
+                        <a href="#actualidad">Actualidad</a>
+                        <a href="#eventos">Eventos</a>
+                        <a href="#reportajes">Reportajes</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="#comunidad">Comunidad</a>
+                    <div class="dropdown-content">
+                        <a href="#foro">Foro</a>
+                        <a href="#chat">Chat en Vivo</a>
+                        <a href="#perfiles">Perfiles</a>
+                    </div>
+                </div>
+                <div class="button submenu">
+                    <a href="#torneos">Torneos</a>
+                    <div class="dropdown-content">
+                        <a href="#locales">Locales</a>
+                        <a href="#nacionales">Nacionales</a>
+                        <a href="#internacionales">Internacionales</a>
+                    </div>
+                </div>
+                <div class="button"><a href="./login/login.html">Iniciar Sesión</a></div>
+                <div class="button"><a href="./login/registro.html">Registrarse</a></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="colum">
+                <h2>Partidas</h2>
+            </div>
+            <div id="tablero">
+                
+                <!-- el centro -->
+                <div class="tableroAjedrezConJS">
+    
+                    <div class="casillaImpar" data-celda="11"><i class="fi fi-rr-chess-rook-alt"></i></div>
+                    <div class="casillaImpar" data-celda="12"><i class="fi fi-rr-chess-knight-alt"></i></div>
+                    <div class="casillaImpar" data-celda="13"><i class="fi fi-rr-chess-piece"></i></div>
+                    <div class="casillaImpar" data-celda="14"><i class="fi fi-rr-chess-queen">__</i></div>
+                    <div class="casillaImpar" data-celda="15"><i class="fi fi-rr-chess-king"></i></div>
+                    <div class="casillaImpar" data-celda="16"><i class="fi fi-rr-chess-piece"></i></div>
+                    <div class="casillaImpar" data-celda="17"><i class="fi fi-rr-chess-knight-alt"></i></div>
+                    <div class="casillaImpar" data-celda="18"><i class="fi fi-rr-chess-rook-alt"></i></div>
+                
+                    <div class="casilla" data-celda="21"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="22"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="23"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="24"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="25"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="26"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="27"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+                    <div class="casilla" data-celda="28"><i class="fi fi-rr-chess-pawn-alt"></i></div>
+            
+                    <div class="casillaImpar" data-celda="31"></div>
+                    <div class="casillaImpar" data-celda="32"></div>
+                    <div class="casillaImpar" data-celda="33"></div>
+                    <div class="casillaImpar" data-celda="34"></div>
+                    <div class="casillaImpar" data-celda="35"></div>
+                    <div class="casillaImpar" data-celda="36"></div>
+                    <div class="casillaImpar" data-celda="37"></div>
+                    <div class="casillaImpar" data-celda="38"></div>
+            
+                    <div class="casilla" data-celda="41"></div>
+                    <div class="casilla" data-celda="42"></div>
+                    <div class="casilla" data-celda="43"></div>
+                    <div class="casilla" data-celda="44"></div>
+                    <div class="casilla" data-celda="45"></div>
+                    <div class="casilla" data-celda="46"></div>
+                    <div class="casilla" data-celda="47"></div>
+                    <div class="casilla" data-celda="48"></div>
+               
+                    <div class="casillaImpar" data-celda="51"></div>
+                    <div class="casillaImpar" data-celda="52"></div>
+                    <div class="casillaImpar" data-celda="53"></div>
+                    <div class="casillaImpar" data-celda="54"></div>
+                    <div class="casillaImpar" data-celda="55"></div>
+                    <div class="casillaImpar" data-celda="56"></div>
+                    <div class="casillaImpar" data-celda="57"></div>
+                    <div class="casillaImpar" data-celda="58"></div>
+               
+                    <div class="casilla" data-celda="61"></div>
+                    <div class="casilla" data-celda="62"></div>
+                    <div class="casilla" data-celda="63"></div>
+                    <div class="casilla" data-celda="64"></div>
+                    <div class="casilla" data-celda="65"></div>
+                    <div class="casilla" data-celda="66"></div>
+                    <div class="casilla" data-celda="67"></div>
+                    <div class="casilla" data-celda="68"></div>
+               
+                    <div class="casillaImpar" data-celda="71"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="72"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="73"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="74"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="75"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="76"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="77"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+                    <div class="casillaImpar" data-celda="78"><i class="fi fi-sr-chess-pawn-alt"></i></div>
+               
+                    <div class="casilla" data-celda="81"><i class="fi fi-sr-chess-rook-alt"></i></div>
+                    <div class="casilla" data-celda="82"><i class="fi fi-sr-chess-knight-alt"></i></div>
+                    <div class="casilla" data-celda="83"><i class="fi fi-sr-chess-piece"></i></div>
+                    <div class="casilla" data-celda="84"><i class="fi fi-sr-chess-queen"></i></div>
+                    <div class="casilla" data-celda="85"><i class="fi fi-sr-chess-king"></i></div>
+                    <div class="casilla" data-celda="86"><i class="fi fi-sr-chess-piece"></i></div>
+                    <div class="casilla" data-celda="87"><i class="fi fi-sr-chess-knight-alt"></i></div>
+                    <div class="casilla" data-celda="88"><i class="fi fi-sr-chess-rook-alt"></i></div>
+                
+                </div>
+            
+                <div class="contFichaMoviendo">Ficha a mover: <div data-celda="fichaMoviendo"> </div></div>
+            
+            
+           
+            </div>
+            <div id="otros">
+                <h2>Otros</h2>
+            </div>
+        </div>
+
+        <div id="footer">
+            <h2>Footer</h2>
+            <div id="multilenguaje">
+                <label for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="es">Español</option>
+                    <option value="en">Inglés</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <script src="./ajedrezConJS2/moverFichas.js"></script>
+</body>
+</html>
